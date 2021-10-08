@@ -36,11 +36,8 @@ export default function Home() {
     // Verification of auth 
     if (!user) {
       await signInWithGoogle()
-    } else{
-
+    } 
         handleCreateRoom('./rooms/new')
-      
-    }
   }
 
   // Function of envia o form
@@ -52,27 +49,21 @@ export default function Home() {
       return;
     }
 
-    // Verifications of room specific of user add, exist
-    //Aonde ponto get busca todos os dados específicos dessa sala 
-
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
-
-    // Caso a sala nao exista sera retornado mensagem de error 
-
-    // Depois inserir um trots 
 
     if (!roomRef.exists()) {
       alert('Room does not exists.');
       return;
     }
-    if(roomRef.val().endedAt) {
+
+    if (roomRef.val().endedAt) {
       alert('Room already closed.');
-    } else{
-      
+      return;
+    }
       // Por fim, se atender todas as condições de cima sera redirecionado para roomCode
   
       handleCreateRoom(`/rooms/${roomCode}`)
-    }
+    
 
 
   }

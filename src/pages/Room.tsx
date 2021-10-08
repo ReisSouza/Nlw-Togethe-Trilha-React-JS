@@ -20,7 +20,6 @@ import {  database } from "../services/firebase"
 import { useAuth,  } from "../hooks/useAuth"
 import {useRoom} from "../hooks/useRoom"
 
-import firebase from "firebase/app";
 import "firebase/auth";
 
 
