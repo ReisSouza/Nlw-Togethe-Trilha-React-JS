@@ -6,7 +6,7 @@ import { FormEvent, useState } from "react"
 import "../styles/room.scss"
 
 // Img
-import LogoImg from '../images/logo.svg'
+import LogoImg from '../Assets/images/logo.svg'
 
 // Components
 import Button from '../components/buttom/Button'

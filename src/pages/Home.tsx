@@ -3,9 +3,9 @@ import { FormEvent, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 // Image
-import logoImg from '../images/logo.svg'
-import illustrationImg from '../images/alfa.svg'
-import googleIconImg from '../images/google-icon.svg'
+import logoImg from '../Assets/images/logo.svg'
+import illustrationImg from '../Assets/images/alfa.svg'
+import googleIconImg from '../Assets/images/google-icon.svg'
 
 // CSS
 import "../styles/auth.scss"

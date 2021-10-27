@@ -3,8 +3,8 @@ import { Link, useNavigate } from "react-router-dom"
 import { FormEvent, useState } from "react"
 
 // Imagem
-import logoImg from '../images/logo.svg'
-import illustrationImg from '../images/alfa.svg'
+import logoImg from '../Assets/images/logo.svg'
+import illustrationImg from '../Assets/images/alfa.svg'
 
 // CSS
 import "../styles/auth.scss"
@@ -51,7 +51,7 @@ export default function NewRoom() {
     // Chamando a constante handle que receber navigation e repassamos para ela aonde queremos que envie o usuário apos
     // Executar todo o código anterior, sendo utilizado key, que e a chave criada para cada sala 
 
-    handle(`/rooms/${firebaseRoom.key}`)
+    handle(`/admin/rooms/${firebaseRoom.key}`)
 
   }
 
